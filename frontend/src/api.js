@@ -1,8 +1,15 @@
 import axios from "axios";
-/*
 
-const USER_API_URL = "http://localhost:9096/api/users";
-const QUIZ_API_URL = "http://localhost:9096/api/quizzes";
+/* ================== CONFIG ================== */
+
+// Your Spring Boot backend URL
+// If backend runs on port 8081, keep as is.
+// If it’s deployed and exposed on 30083, change below line accordingly.
+const API_BASE_URL = "http://localhost:8081";
+
+// Separate base URLs for clarity
+const USER_API_URL = `${API_BASE_URL}/api/users`;
+const QUIZ_API_URL = `${API_BASE_URL}/api/quizzes`;
 
 /* ---------------- USER APIs ---------------- */
 
